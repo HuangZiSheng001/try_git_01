@@ -31,12 +31,20 @@
         <counts>
           <entry key="as" value="1" />
           <entry key="test_02" value="1" />
+<<<<<<< HEAD
           <entry key="txt" value="5" />
+=======
+          <entry key="txt" value="4" />
+>>>>>>> 50d1ed9... add track
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
+<<<<<<< HEAD
           <entry key="PLAIN_TEXT" value="7" />
+=======
+          <entry key="PLAIN_TEXT" value="6" />
+>>>>>>> 50d1ed9... add track
         </counts>
       </usages-collector>
     </session>
@@ -46,8 +54,22 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test_01.txt">
           <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
             <state relative-caret-position="125">
               <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+            <state relative-caret-position="165">
+              <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_02.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
+>>>>>>> 50d1ed9... add track
             </state>
           </provider>
         </entry>
@@ -74,8 +96,13 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
+<<<<<<< HEAD
     <option name="x" value="119" />
     <option name="y" value="47" />
+=======
+    <option name="x" value="188" />
+    <option name="y" value="25" />
+>>>>>>> 50d1ed9... add track
     <option name="width" value="1147" />
     <option name="height" value="671" />
   </component>
@@ -153,17 +180,27 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
+<<<<<<< HEAD
     <frame x="119" y="47" width="1147" height="671" extended-state="0" />
     <editor active="true" />
+=======
+    <frame x="611" y="30" width="1147" height="671" extended-state="0" />
+>>>>>>> 50d1ed9... add track
     <layout>
       <window_info id="Favorites" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24931003" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.34514925" />
       <window_info anchor="bottom" id="Python Console" weight="0.3283582" />
       <window_info anchor="bottom" id="Terminal" weight="0.3432836" />
+=======
+      <window_info anchor="bottom" id="Version Control" weight="0.34514925" />
+      <window_info anchor="bottom" id="Python Console" weight="0.3283582" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.56902987" />
+>>>>>>> 50d1ed9... add track
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -230,6 +267,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/test_03.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -237,6 +275,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> 50d1ed9... add track
     <entry file="file://$PROJECT_DIR$/test_02.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -244,15 +284,28 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4020" />
+=======
+    <entry file="file://$PROJECT_DIR$/test_03.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
+        </state>
+>>>>>>> 50d1ed9... add track
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_01.txt">
       <provider selected="true" editor-type-id="text-editor">
+<<<<<<< HEAD
         <state relative-caret-position="125">
           <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+=======
+        <state relative-caret-position="165">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+>>>>>>> 50d1ed9... add track
         </state>
       </provider>
     </entry>
