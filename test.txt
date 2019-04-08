@@ -1,0 +1,391 @@
+public class ShuiXianHuaNum {
+    public static void main(String[] args) {
+        getResult();
+    }
+
+    private static void getResult(){
+        for (int i = 100; i <1000 ; i++) {
+            int firstNum = i/100;
+            int secondNum = i/10%10;
+            int thirdNum = i%10;
+            if(Math.pow(firstNum,3) + Math.pow(secondNum,3) + Math.pow(thirdNum,3) == i){
+                System.out.println("水仙花数为：" + i);
+            }
+        }
+    }
+}
+
+
+
+Intent intent = new Intent();
+intent.putExtra("detail", detail.getText().toString());
+intent.setClass(mActivity, NewestActivity.class);
+startActivity(intent)
+
+
+Intent intent = new Intent(getActivity(), NewestActivity.class);
+intent.putExtra("detail", detail.getText().toString());
+startActivity(intent);
+
+
+
+public static class ViewHolder {
+    public ImageView remen_gallery_img;
+    public TextView title, zongnumber, canyu, shenyu, detail;
+    public ProgressBar progressBar;
+}
+
+
+public class JsonBean {
+    private String already = null; // 以参与人数
+    private String thumb = null;
+    private String title = null;
+    private String detail = null;
+    private String total = null;// 总参与人数
+    private String remaining = null;// 剩余人数
+    private String issue = null;// 期数
+    
+    public JsonBean() {
+        // TODO Auto-generated constructor stub
+    }
+}
+
+
+
+
+package Example;      //定义自己的包名（命名空间）
+public class Example1                    //定义一个类
+{
+    public static void main(String[] args)       
+    {
+        System.out.println("Hello world!");
+    }
+}
+
+
+
+
+
+package Example;
+class Person{
+        public int age;                 //声明公共字段age
+        private String name;            //声明私有字段name,此时name为类的属性,下面通过公有方法进行访问
+        public String getName() {
+           return name;
+        }
+        public void setName(String name) {
+           this.name = name;
+        }
+
+        public void eat() {             //定义无参数的eat方法
+          System.out.println("Person can eat");
+        }
+
+        public void eat(String s){      //定义带参数的eat方法,实现方法重载
+          System.out.println("Person can eat"+s);
+        }
+        public Person(){ }          //  定义无参构造函数,注意无返回值定义,方法与类同名
+        
+        public Person(int age, String name) {//重写一个带参数构造函数,注意无返回值定义,方法与类同名
+           this.age = age;         //前一个age为对象的字段,由this指定,后一个age为函数形参
+           this.name = name;       //前一个name为对象的属性,由this指定,因为在本类中可直接访问,后一个name为函数形参
+        }
+}
+
+public class Example2{
+    public static void main(String[] args){
+        Person person1 = new Person();  //调用类的无参构造函数
+        person1.age = 20;               //给对象的公有字段直接赋值
+        person1.setName("zhangsan");      //必须使用公共方法才能给对象的属性赋值
+        System.out.println("第一个人信息,姓名:"+person1.getName()+"年龄:"+person1.age);
+        person1.eat();                  //调用对象的无参方法
+        Person person2 = new Person(18, "lisi");//调用类的有参构造函数
+        System.out.println("第二个人信息,姓名:" + person2.getName() + "年龄:" + person2.age);
+        person2.eat(" 馒头");           //调用对象的有参方法
+    }
+}
+
+
+
+
+
+package Example;
+//注意：继承抽象类的类，要求抽象类中的抽象方法要被实例化
+
+abstract class personClass //抽象类
+{  
+    public String sex;//变量。
+    public abstract void method(); //抽象方法。
+}
+
+class man extends personClass //以抽象类为模块的类
+{  
+    public  void method()//抽象方法的实例化
+    {
+       System.out.println("继承抽象类的方法被实现化了");
+    }
+}
+
+public  class Example6
+{
+    public static void main(String[] args)
+    {
+        man boys = new man();//产生一个对象
+        boys.sex = "male";//给对象一个初值
+        System.out.println(boys.sex);
+        boys.method();//调用man类中的方法
+    }
+}
+
+
+
+
+package Example;
+ 
+interface Iinterface //定义一个接口
+{
+    int i=10;      //定义的变量为fianal类型；
+    void method();  // 声明接口方法，但不能有方法体{}
+}
+
+public class Example7 implements Iinterface    //实现接口
+{
+    public void method()   //接口的方法在此必须被重写，注意访问修饰符为public
+    {
+       System.out.println("接口实现成功！！！");
+    }
+    public static void main(String[] args)
+    {
+        Example7 prog7 = new Example7();
+        //prog7.i=10;      不能修改ｉ的值，为final类型
+        prog7.method(); 
+    }
+}
+
+
+// 抽象类与接口混合编程例子
+package Example;
+
+interface myInterface  //定义一个接口
+{
+    void method1();
+}
+
+abstract class abstractClass//定义一个抽象类
+{
+    public abstract void method2(); //加abstract
+}
+
+class shixianlei extends abstractClass implements myInterface   //继承抽象类，实现接口。
+{
+    public String st;       //定义自己的字段
+    public void method1()   //实现接口，注意访问修饰符加public
+    {
+       System.out.println("接口方法已加public实现");
+    }
+
+    public void method2()//实现抽象方法
+    {
+       System.out.println("抽象类方法已实现");
+    }
+}
+
+public class Example8
+{
+    public static void main(String[] args)
+    {
+        shixianlei sxl = new shixianlei();
+        sxl.st = "实现类的字段";
+        System.out.println(sxl.st);
+        sxl.method1();      //实现的接口方法调用
+        sxl.method2();      //实现的抽象类的方法调用
+
+    }
+}
+
+
+
+
+
+
+
+// 接口回调与多态性
+package Example;
+ 
+interface Eat  //定义一个接口
+{
+    void eat();
+
+}
+
+class Cow implements Eat //实现接口。
+{
+    public String name="牛哞哞";       //定义自己的字段
+    public void eat()   //实现接口，注意访问修饰符加public
+    {
+       System.out.println("母牛爱吃青草");
+    }
+}
+
+class Hen implements Eat            //实现接口。
+{
+    public String name="鸡咯咯";       //定义自己的字段
+    public void eat()           //实现接口，注意访问修饰符加public
+    {
+       System.out.println("母鸡爱吃小虫");
+    }
+}
+   
+public class Example9
+{
+    public static void main(String[] args)
+    {
+        //多态的实现,animalEat代表不同对象，表现出不同的行为
+        Eat animalEat = new Cow(); //注意这种生成实例的方法，此处代表母牛
+        animalEat.eat();          //调用母牛的方法
+        //System.out.println(animalEat.name); //不能访问
+        animalEat=new Hen();       //注意这种生成实例的方法，此处代表母鸡
+        animalEat.eat();          //调用母鸡的方法
+        //System.out.println(animalEat.name);//不能访问
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+public class Person //人
+{
+    public string IdNo{get;set;}
+ 
+    public string Name { get; set; }
+ 
+    public string Sex { get; set; }
+ 
+    public double Height { get; set; }
+ 
+    public double Weight { get; set; }
+ 
+    public DateTime BirthDay { get; set; }
+ 
+}
+ 
+public class Post //文章
+{
+    public string Title { get; set; }
+ 
+    public string Content { get; set; }
+ 
+    public Author Author { get; set; }
+     
+    public DateTime CreateDatetime { get; set; }
+ 
+}
+ 
+public class Author : Person //角色为作者
+{
+    public void Write(Post post)
+    {
+        //行为
+    }
+}
+ 
+ 
+public class Book //书
+{
+    public string Name { get; set; }
+ 
+    public DateTime IssuedDate { get; set; }
+ 
+    public List<Post> Posts;
+ 
+}
+ 
+public class Library //图书馆
+{
+    public string Name { get; set; }
+ 
+    public List<Book> Books { get; set; }
+ 
+    public void Borrow(Reader reader, IEnumerable<Book> books) //借出书，被动
+    {
+        Books.RemoveAll(b=>books.Contains(b));
+        //其它操作
+    }
+ 
+    public void Return(Reader reader,IEnumerable<Book> books)//还入书，被动
+    {
+        Books.AddRange(books);
+        //其它操作
+    }
+}
+ 
+public class Reader : Person //角色为读者
+{
+    public List<Book> Books { get; set; }
+ 
+    public IEnumerable<Post> Read(Book book,params int[] pages) //读书，主动
+    {
+        var posts = new List<Post>();
+        if (pages != null)
+        {
+            foreach(int i in pages)
+            {
+                posts.Add(book.Posts[i]);
+            }
+        }
+        else
+        {
+            posts = book.Posts;
+        }
+        return posts;
+    }
+ 
+    public void Borrow(IEnumerable<Book> books, Library library) //主动借书
+    {
+        library.Borrow(this,books);
+        Books.AddRange(books);
+    }
+ 
+    public void Return(IEnumerable<Book> books, Library library)//主动还书
+    {
+        library.Return(this, books);
+        Books.RemoveAll(b => books.Contains(b));
+    }
+ 
+}
+ 
+public class Driver:Person //角色为驾驶员
+{
+    public void Drive(Car car)
+    {
+        car.Driver = this;
+        car.Start();
+        car.Stop();
+    }
+}
+ 
+public class Car
+{
+    public Driver Driver { get; set; }
+ 
+    public string Status{get;private set;}
+ 
+    public void Start()
+    {
+        this.Status="运行中";
+    }
+ 
+    public void Stop()
+    {
+        this.Status="停止";
+    }
+}
